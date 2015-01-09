@@ -1,0 +1,70 @@
+ul.vbUL6u4m1 {
+  position: absolute;
+  visibility: hidden;
+}
+.vbUL6u4m1 {
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  overflow: auto;
+  font-size: 1px;
+  margin: 0px;
+}
+div.vbUL6u4m1, table.vbUL6u4m1 .subContent{
+  border: 1px solid #646464;
+  background-color: #FFFFFF;
+  padding: 2px;
+  opacity:1.00;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+.vbUL6u4m1 table {
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+.vbUL6u4m1 table tr {
+  font-size: 1px;
+  cursor: pointer;
+  background-color: #FFFFFF;  
+}
+.vbUL6u4m1 tr.over {
+  background-color: #D7EDF3;
+}
+.vbUL6u4m1 table td {
+  border: 1px solid #FFFFFF;
+  padding: 3px;
+  text-align: left;
+}
+.vbUL6u4m1 tr.over td {
+  border-color: #BFD2D8;
+}
+.vbUL6u4m1 td a, .vbUL6u4m1 td span{
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+.vbUL6u4m1 tr.over a, .vbUL6u4m1 tr.over span {
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+.vbUL6u4m1 tr.popup {
+  background-color: #D7EDF3;
+}
+.vbUL6u4m1 tr.popup td {
+  border-color: #BFD2D8;
+}
+.vbUL6u4m1 tr.popup a, .vbUL6u4m1 tr.popup a{
+  font-family: Tahoma;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+

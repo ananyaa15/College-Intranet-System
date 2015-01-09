@@ -1,0 +1,83 @@
+getDeptHead.php=ModifyTeacher
+getDeptRoom=ModifyClass
+getElective=AssignElective
+getHead=ModifyTeacher
+getHod=ModifyDept
+getMentorSE=ModifyBatch
+getStudent=ModifyStudent
+getStudentElective=AssignElective
+getSubject=Attendance.php and cst.php
+
+Before alloting timetable change sem(correspoding) using modify class 
+
+Done:
+1)AddBatch,DeleteBatch(in DeleteClass),Modify Batch
+2)AddClass,DeleteClass,Modify Class
+	2.1)On DeleteClass its entry deleted in batch..
+3)AddDept,,DeleteDeptModify Dept
+4)AddStudent.ModifyStudent
+	4.1)On AddStudent changes done in Class...
+	4.2)On ModifyStudent changes done in Class....
+5)AddSubject
+6)AddTeacher,DeleteTeacher,ModifyTeacher
+7)AssignElective
+8)Register and Login
+	8.1)On AddRegister entry added to Login
+9)UploadFile,UploadNotice
+
+
+To be Done....
+1)Delete Student , change totalstudent in class
+2)on ModifyClass change its ClassId in student..... and in batch
+3)on DeleteClass delete its entry in student
+4)on DeleteDept delete entries from class....
+5)on ModifyDept delete entries from class....
+6)On DeleteTeacher change HodId in Dept & HeadId in Teacher
+7)On ModifyTeacher change HodId in Dept & HeadId in Teacher
+8)To make Modify Subject , DeleteSubject...
+
+
+
+
+//CODE FR SELECTING ALL D CHECKBOXES
+
+function SetAllCheckBoxes(FormName, FieldName, CheckValue)
+{
+	if(!document.forms[FormName])
+		return;
+	var objCheckBoxes = document.forms[FormName].elements[FieldName];
+	if(!objCheckBoxes)
+		return;
+	var countCheckBoxes = objCheckBoxes.length;
+	if(!countCheckBoxes)
+		objCheckBoxes.checked = CheckValue;
+	else
+		// set the check value for all check boxes
+		for(var i = 0; i < countCheckBoxes; i++)
+			objCheckBoxes[i].checked = CheckValue;
+}
+
+
+
+
+In phpMyAdmin, select the database that you want to work with.
+Go to the SQL tab at the top of the page.
+In the "Run SQL query/queries on database" form, change the Delimiter to $$. (Located in a small box at the bottom of the form)
+Enter your SQL trigger into the main dialog box on the form. The correct syntax is as follows (per a MySQL employee and it worked for me...)
+
+//Code for creating trigger
+CREATE TRIGGER membership 
+AFTER INSERT ON members 
+FOR EACH ROW 
+BEGIN 
+INSERT INTO member_since (member_id,signup_date) values (NEW.member_id,now()); 
+END;$$ 
+
+
+
+
+
+
+
+
+
